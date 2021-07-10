@@ -38,3 +38,9 @@
   .container{
       width: 90%;
   }
+
+  main{
+      width: 100%;
+      height: calc(100vh - 200px);
+      display: flex;
+  }
