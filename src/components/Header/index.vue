@@ -43,7 +43,7 @@ export default {
     .header{
         background-color: var(--color-background-nav);
         width: 100%;
-        height: 150px;
+        height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -57,6 +57,7 @@ export default {
     .header__nav{
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .header_menu_overlay{
@@ -99,5 +100,37 @@ export default {
     }
     .home_navegation ul li a{
         color: var(--color-text-light);
+    }
+
+    @media (min-width: 700px){
+        .header_menu_overlay,
+        .logo_navegatio,
+        .header_menu_button{
+            display: none;
+        }
+
+        .header__nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .home_navegation{
+            display: flex;
+            flex-direction: row;
+            width: auto;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+            position: static;
+        }
+        
+        .home_navegation ul{
+            display: flex;
+        }
+        .home_navegation ul li{
+            margin: 0;
+            margin-left: 30px;
+        }
     }
 </style>
